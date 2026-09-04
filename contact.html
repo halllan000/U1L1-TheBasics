@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>Contact &mdash; Marvel rivals </title>
   <link rel="icon" href="images/download.png">
 </head>
+
 <body>
 
   <header>
@@ -24,42 +26,67 @@
 
   <main>
 
-  <p>I have played most heros and have a good idea what each of them do but tell me who is should play.</p>
+    <p>I have played most heros and have a good idea what each of them do but tell me who is should play.</p>
 
-  
-  <form action="#" method="post">
 
-    
-    <p>
-      <label for="name">Your name</label><br>
-      <input type="text" id="name" name="name">
-    </p>
+    <form action="#" method="post">
 
-    <p>
-      <label for="email">Email</label><br>
-      <input type="text" id="email" name="email">
-    </p>
 
-    <p>
-      <label for="character">Which role?</label><br>
-      <select id="character" name="character">
-        <option value="">-- pick one --</option>
-        <option value="shades">Tank</option>
-        <option value="brown-county">DPS</option>
-        <option value="clifty-falls">Healer</option>
-      </select>
-    </p>
+      <p>
+        <label for="name">Your name</label><br>
+        <input type="text" id="name" name="name" placeholder="First name is fine" required>
+      </p>
 
-    <p>
-      <label for="why">Tell me about them?</label><br>
-      <textarea id="why" name="why" rows="5" cols="40"></textarea>
-    </p>
+      <p>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email" placeholder="you@example.com" required>
+      </p>
+      <p>
+        <label for="season">What season is it </label><br>
+        <input type="number" id="season" name="season" min="0" max="24" value="0">
+      </p>
+      <p>
+        <label for="character">Which role?</label><br>
+        <select id="character" name="character">
+          <option value="">-- pick one --</option>
+          <option value="Tank">Tank</option>
+          <option value="DPS">DPS</option>
+          <option value="Healer">Healer</option>
+        </select>
+      </p>
 
-    <p><button type="submit">Send it</button></p>
+      <p>
+        <label for="why">Tell me about them?</label><br>
+        <textarea id="why" name="why" rows="5" cols="40"></textarea>
+      </p>
 
-  </form>
+      <fieldset>
+        <legend>how long have you been playing?</legend>
+        <p>
+          <input type="radio" id="notmuch" name="distance" value="mid">
+          <label for="notmuch">under a hundred hours</label>
+        </p>
+        <p>
+          <input type="radio" id="some" name="distance" value="near" checked>
+          <label for="some">One to five hundered hours</label>
+        </p>
+        <p>
+          <input type="radio" id="alot" name="distance" value="near" checked>
+          <label for="alot">more than five hundered hours</label>
 
-  >
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="checkbox" id="dissagreeing" name="dissagreeing" value="yes">
+        <label for="dissagreeing">I am fine with dissagreeing on charecters difficulty</label>
+      </p>
+
+      <p><button type="submit">Send it</button></p>
+
+    </form>
+
+    >
 
   </main>
 
@@ -68,4 +95,5 @@
   </footer>
 
 </body>
+
 </html>
