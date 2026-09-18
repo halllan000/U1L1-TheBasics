@@ -2,46 +2,66 @@
     --dark: rgb(252, 2, 2);
     --light: white;
     --background: black;
-
+    --accent: rgb(6, 116, 241);
 }
+
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
-    color: rgb(248, 247, 247);
-    background-color: rgb(8, 8, 8);
+    color: var(--light);
+    background-color: var(--background);
     margin: 0 auto;
     max-width: 45rem;
 }
 
 h1 {
     font-size: 2rem;
-    color: rgb(243, 4, 4);
+    color: var(--dark);
 }
 
 h2 {
     font-size: 1.4rem;
-    color: rgb(248, 4, 4);
-    border-bottom: 1px solid rgb(255, 255, 255);
+    color: var(--dark);
+    border-bottom: 1px solid var(--light);
 }
 
 h3 {
     font-size: 1.5rem;
-    color: rgb(248, 4, 4);
+    color: var(--dark);
 
 
 }
 
 .intro {
-    color: rgb(253, 253, 253);
-
+    color: var(--light);
+    border: 1px solid var(--dark);
 }
 
 
 a {
-    color: rgb(6, 116, 241);
+    color: var(--accent);
 }
 
 blockquote {
-    background-color: red;
+    background-color: var(--dark);
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    border-left: 6px solid var(--dark);
+}
+
+header {
+    padding: 1.5rem 2rem;
+    
+}
+
+main {
+    padding: 1.5rem 2rem;
+}
+
+footer {
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    background-color: var(--light);
+    color: var(--background);
 }
