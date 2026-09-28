@@ -22,7 +22,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;;
 }
 
@@ -47,6 +48,24 @@ h3 {
 
 }
 
+a:link {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--light);
+}
+
+a:hover {
+    text-decoration: var(--background);
+    color: var(--accent);
+}
+
+a:active {
+    color: var(--background);
+}
+
 .iframe {
     max-width: 100%;
     background-color: var(--background);
@@ -64,9 +83,7 @@ h3 {
 }
 
 
-a {
-    color: var(--accent);
-}
+
 
 blockquote {
     background-color: var(--dark);
