@@ -24,7 +24,8 @@ body {
 h1,
 h2,
 h3 {
-    font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;;
+    font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+    ;
 }
 
 h1 {
@@ -82,7 +83,25 @@ a:active {
     border: 1px solid var(--dark);
 }
 
+#table {
+    border-collapse: collapse;
+    width: 100%;
+}
 
+th,
+td {
+    text-align: left;
+    border: 1px solid var(--dark);
+}
+
+tbody tr:hover{
+    background-color: var(--dark);
+}
+
+caption {
+    caption-side: top;
+    padding: .5rem 0;
+}
 
 
 blockquote {
@@ -106,13 +125,10 @@ main {
     background-color: var(--background);
 }
 
-a:focus 
-button:focus 
-input:focus 
-select:focus 
-textarea:focus {
+a:focus button:focus input:focus select:focus textarea:focus {
     outline: 3px solid var(--dark);
-    outline: offset 2px; ;
+    outline: offset 2px;
+    ;
 }
 
 .img {
